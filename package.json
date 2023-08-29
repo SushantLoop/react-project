@@ -27,10 +27,6 @@
     "format": "npm run prettier:fix && npm run lint:fix",
     "husky-install": "husky install"
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "src/**/*.{js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",

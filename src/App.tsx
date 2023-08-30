@@ -6,6 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>ESLint with Husky</h1>
+
+        <p>asd</p>
       </header>
     </div>
   )

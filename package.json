@@ -29,7 +29,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "npm run format"
+    "src/**/*.{js,jsx,ts,tsx}": ["npm run format", "npm version patch"]
   },
   "eslintConfig": {
     "extends": [

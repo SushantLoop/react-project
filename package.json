@@ -25,7 +25,7 @@
     "prettier": "prettier --check \"./**/*.{ts,tsx,js,jsx,json}\" --config ./.prettierrc",
     "prettier:fix": "prettier --write \"./**/*.{ts,tsx,js,jsx,json}\" --config ./.prettierrc",
     "format": "npm run prettier:fix && npm run lint:fix",
-    "husky-install": "husky install"
+    "serve": "serve -s build"
   },
   "lint-staged": {
     "./**/*.{js,jsx,ts,tsx}": "npm run format",

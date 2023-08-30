@@ -17,15 +17,15 @@
   },
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
-    "no-async-promise-executor": "error",
-    "no-unsafe-optional-chaining": "error",
-    "no-prototype-builtins": "off",
-    "no-extra-semi": "off",
-    "no-empty": "off",
-    "react-hooks/exhaustive-deps": "off",
-    "no-useless-catch": "off",
-    "no-empty-function": "off",
-    "no-debugger": "off",
+    "no-async-promise-executor": "error", // Disallow using an async function as a Promise executor
+    "no-unsafe-optional-chaining": "error", // Disallow use of optional chaining in contexts where the undefined value is not allowed
+    "no-prototype-builtins": "off", // Disallow calling some Object.prototype methods directly on objects
+    "no-extra-semi": "off", // Disallow unnecessary semicolons
+    "no-empty": "off", // Disallow empty block statements
+    "react-hooks/exhaustive-deps": "off", // Warns us when we have a missing dependency in an effect hook.
+    "no-useless-catch": "off", // Disallow unnecessary `catch` clauses
+    "no-empty-function": "off", // Disallow empty functions
+    "no-debugger": "off", // Disallow the use of `debugger`
     // "prettier/prettier": "off",
     "prettier/prettier": [
       "error",
@@ -42,16 +42,16 @@
       }
     ],
 
-    "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/no-extra-semi": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-ts-ignore": "off", // Disallow @ts-ignore
+    "@typescript-eslint/no-extra-semi": "off", // Disallow unnecessary semicolons
+    "@typescript-eslint/ban-ts-comment": "off", // Disallow @ts-<directive> comments or require descriptions after directives
 
-    "@typescript-eslint/ban-types": "off",
-    "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/no-empty-function": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/ban-types": "off", // Disallow certain types
+    "@typescript-eslint/no-empty-interface": "off", // Disallow the declaration of empty interfaces
+    "@typescript-eslint/no-var-requires": "off", // Disallow require statements except in import statements
+    "@typescript-eslint/no-empty-function": "off", // Disallow empty functions
+    "@typescript-eslint/no-explicit-any": "off", // Disallow the any type
+    "@typescript-eslint/no-non-null-assertion": "off", // Disallow non-null assertions using the ! postfix operator
 
     "react/self-closing-comp": ["error", { "component": true, "html": true }],
     "jsx-quotes": ["warn", "prefer-double"],

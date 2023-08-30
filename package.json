@@ -25,10 +25,11 @@
     "prettier": "prettier --check \"./**/*.{ts,tsx,js,jsx,json}\" --config ./.prettierrc",
     "prettier:fix": "prettier --write \"./**/*.{ts,tsx,js,jsx,json}\" --config ./.prettierrc",
     "format": "npm run prettier:fix && npm run lint:fix",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx,json}": "npm run format",
+    "./**/*.{js,jsx,ts,tsx}": "npm run format",
     "./**/*.{js,jsx,ts,tsx}": "npm run build"
   },
   "eslintConfig": {

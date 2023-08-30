@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+COMMIT_MSG_FILE=$1
+
+node bump.js
+git add package.json
+git commit -m "`cat $COMMIT_MSG_FILE`" --no-verify
+false

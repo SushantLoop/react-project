@@ -28,8 +28,7 @@
     "husky-install": "husky install"
   },
   "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx}": "npm run format",
-    "./**/*.{js,jsx,ts,tsx}": "npm run nuild"
+    "./**/*.{js,jsx,ts,tsx}": "npm run format"
   },
   "eslintConfig": {
     "extends": [

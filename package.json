@@ -1,6 +1,6 @@
 {
   "name": "react-project",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -31,7 +31,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "npm run format"
+      "npm run format",
+      "npm run build"
     ]
   },
   "eslintConfig": {

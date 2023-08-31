@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+COMMIT_MSG_FILE=$1
+
 npm version patch --no-git-tag-version
+git add package.json
+git commit -m "`cat $COMMIT_MSG_FILE`" --no-verify
+false

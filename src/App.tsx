@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Button from './components/Button/Button'
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <h1>ESLint with Husky</h1>
 
-        <p>New changes in the repo</p>
+        <Button />
       </header>
     </div>
   )

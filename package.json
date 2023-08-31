@@ -10,6 +10,7 @@
     "@types/node": "^16.18.46",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "git-branch-is": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -20,16 +21,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx,json}\"",
-    "lint:fix": "eslint \"src/**/*.{ts,tsx,js,jsx,json}\" --fix",
-    "prettier": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json}\" --config ./.prettierrc",
-    "prettier:fix": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\" --config ./.prettierrc",
+    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
+    "prettier": "prettier --check \"src/**/*.{ts,tsx,js,jsx}\" --config ./.prettierrc",
+    "prettier:fix": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\" --config ./.prettierrc",
     "format": "npm run prettier:fix && npm run lint:fix",
     "serve": "serve -s build",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": ["npm run format", "npm version patch"]
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run format"
+    ]
   },
   "eslintConfig": {
     "extends": [
